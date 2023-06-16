@@ -1,6 +1,6 @@
 dash==2.10.2
-pandas==2.0.0
-xarray==2023.5.0
-numpy==1.23.5
-plotly==5.15.0
+pandas
+xarray
+numpy
+plotly
 gunicorn
