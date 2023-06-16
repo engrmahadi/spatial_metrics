@@ -35,7 +35,7 @@ accuracy_dataset = xr.Dataset(
 )
 
 # Create the Dash application
-app = dash.Dash(__name__)
+app = dash.Dash(__name__,server=server,)
 sever = app.server
 #app = JupyterDash(__name__)
 
