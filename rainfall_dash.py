@@ -36,6 +36,7 @@ accuracy_dataset = xr.Dataset(
 
 # Create the Dash application
 app = dash.Dash(__name__)
+sever=app.server
 #app = JupyterDash(__name__)
 
 # Define the layout of the application
@@ -104,7 +105,7 @@ def update_rainfall_plot(selected_date):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
     #app.run_server(mode="inline")
     #app.run_server(mode="inline", port=8050)
     #app.server.run(port=8000, host='127.0.0.1')
